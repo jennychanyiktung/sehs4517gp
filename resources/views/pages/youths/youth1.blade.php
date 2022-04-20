@@ -59,6 +59,10 @@ button.submit{
     cursor: pointer;
     transition: opacity 0.4s;
 }
+button.submit a{
+    text-decoration:none;
+    color:white;
+}
 button.submit:hover{
     opacity:0.7;
 }
@@ -180,7 +184,7 @@ section .container3 .info .btn-readmore:hover > i{
         <div class="container2">
            <h1>Are you depress?</h1>
             <h3>A series of questions designed to assess your emotional, physical, and intellectual symptoms.</h3>
-            <button class="submit">Make a test</button>
+            <button class="submit"><a href="{{ url('questionnaire') }}">Make a test</a> </button>
         </div>
     </header>
     <section class="content">
@@ -192,7 +196,7 @@ section .container3 .info .btn-readmore:hover > i{
                     <h2 class="title">Element of Emotion</h2>
                     <p class="description">Emotions, which live with us every day, sometimes remind us of them before our consciousness does. When we encounter unfair treatment, A feels frustrated, while B shows incomparable anger, why the two emotions...</p>
                     <div class="btn-readmore">
-                        <a href="">Read more</a>
+                        <a href="{{ url('youth1.2') }}">Read more</a>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
@@ -205,7 +209,7 @@ section .container3 .info .btn-readmore:hover > i{
                     <h2 class="title">How do I listen to people? How do I speak to people?</h2>
                     <p class="description">Every word, whether it comes out of kindness or ill will, from the other person's mouth or their own inner voice, different emotions will turn into a set of notes, which will amplify, refine, and even adapt the original meaning of the words,...</p>
                     <div class="btn-readmore">
-                        <a href="">Read more</a>
+                        <a href="{{ url('youth1.3') }}">Read more</a>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>

@@ -150,6 +150,10 @@ button.submit{
 button.submit:hover{
     opacity:0.7;
 }
+button.submit a{
+    text-decoration:none;
+    color:white;
+}
 /* responsive */
 @media(max-width:780px){
   .body{
@@ -191,9 +195,9 @@ button.submit:hover{
                      <input type="password" placeholder="password" class="field error">
                      <i class="fa-solid fa-lock"></i>
                  </div>
-                 <p class="remind"><a href="">Don't have account?</a></p>
+                 <p class="remind"><a href="{{ url('registration') }}">Don't have account?</a></p>
 
-                 <button class="submit">Login</button>
+                 <button class="submit"><a href="{{ url('record') }}">Login</a> </button>
              </form>
           </div>
       </section>
